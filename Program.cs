@@ -24,7 +24,7 @@ namespace NFEchoWebSocketServer
             Thread.Sleep(1000);
 
             const string Ssid = "testnetwork";
-            const string Password = "securepassword1!";
+            const string Password = "**************";
             // Give 60 seconds to the wifi join to happen
             CancellationTokenSource cs = new(60000);
             var success = NetworkHelper.ScanAndConnectWifiDhcp(Ssid, Password, setDateTime: true, token: cs.Token);
